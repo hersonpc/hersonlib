@@ -9,6 +9,7 @@
 #' @return Tibble com os dados
 #' @export
 #'
+#' @importFrom magrittr "%>%"
 #' @importFrom utils read.csv
 #' @importFrom utils read.csv2
 #' @importFrom utils download.file
@@ -18,6 +19,9 @@
 #' /pub?gid=<GID>&single=true&output=csv"
 #' \dontrun{data <- download_data(url, csv_type = 1)}
 download_data <- function(url, csv_type = 2) {
+    # Referência ao pipe
+    `%>%` <- magrittr::`%>%`
+
     if(stringr::str_trim(url) == "") {
         stop("Invalid URL.")
     }

@@ -9,8 +9,7 @@ download_data(url, csv_type = 2)
 \arguments{
 \item{url}{Endereço na internet onde o dado esta disponível}
 
-\item{csv_type}{Type: 1 for "," separator
-2 for ";" separator}
+\item{csv_type}{Type 1 for "," separator or  2 for ";" separator}
 }
 \value{
 Tibble com os dados
