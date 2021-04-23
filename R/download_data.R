@@ -5,8 +5,10 @@
 #'
 #' @param url Endereço na internet onde o dado esta disponível
 #' @param csv_type Type 1 for "," separator or  2 for ";" separator
-
-#' @return Tibble com os dados
+#'
+#' @author Herson Melo <hersonpc@gmail.com>
+#'
+#' @return \code{Tibble} com os dados
 #' @export
 #'
 #' @importFrom magrittr "%>%"
@@ -14,10 +16,13 @@
 #' @importFrom utils read.csv2
 #' @importFrom utils download.file
 #'
+#' @seealso \link[utils]{download.file}
+#'
 #' @examples
-#' url <- "https://docs.google.com/spreadsheets/d/e/<GOOGLE-SPREADSHEET-ID>
-#' /pub?gid=<GID>&single=true&output=csv"
-#' \dontrun{data <- download_data(url, csv_type = 1)}
+#' url <- "https://myurl.com/data_file.csv"
+#' \dontrun{
+#' data <- download_data(url, csv_type = 1)
+#' }
 download_data <- function(url, csv_type = 2) {
     # Referência ao pipe
     `%>%` <- magrittr::`%>%`

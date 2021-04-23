@@ -12,14 +12,21 @@ download_data(url, csv_type = 2)
 \item{csv_type}{Type 1 for "," separator or  2 for ";" separator}
 }
 \value{
-Tibble com os dados
+\code{Tibble} com os dados
 }
 \description{
 Baixa dados da internet para um repositório local, de uma forma mais segura,
 evitando a quebra de informações acessadas diretamente.
 }
 \examples{
-url <- "https://docs.google.com/spreadsheets/d/e/<GOOGLE-SPREADSHEET-ID>
-/pub?gid=<GID>&single=true&output=csv"
-\dontrun{data <- download_data(url, csv_type = 1)}
+url <- "https://myurl.com/data_file.csv"
+\dontrun{
+data <- download_data(url, csv_type = 1)
+}
+}
+\seealso{
+\link[utils]{download.file}
+}
+\author{
+Herson Melo \href{mailto:hersonpc@gmail.com}{hersonpc@gmail.com}
 }
