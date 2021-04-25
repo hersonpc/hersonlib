@@ -1,6 +1,6 @@
 Package: hersonlib
 Title: R Package - Herson`s usual functions library for R
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: 
     person(given = "Herson",
            family = "Melo",
