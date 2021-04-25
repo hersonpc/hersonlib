@@ -21,3 +21,5 @@ Imports:
     readr,
     dplyr,
     glue
+Depends: 
+    R (>= 2.10)
